@@ -14,5 +14,5 @@ fi
 
 source $HOME/.aliases
 
-xset -b
+which xset &>/dev/null && xset -b
 

@@ -50,12 +50,14 @@ function prompt_sorinsolarized_setup {
 
   # zstyle ':prezto:module:editor:info:keymap:primary' format ' %F{red}>%F{yellow}>%F{green}>%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary' format ' %F{red}❯%F{yellow}❯%F{green}❯%f%b'
+  # zstyle ':prezto:module:editor:info:keymap:primary' format '%F{red}%K{yellow}⮀%F{yellow}%K{green}⮀%F{green}%k⮀'
 
   # zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' %F{red}!f'
   zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' %F{red}♺%f'
 
   # zstyle ':prezto:module:editor:info:keymap:alternate' format ' %F{green}<%F{yellow}<%F{red}<%f%b'
   zstyle ':prezto:module:editor:info:keymap:alternate' format ' %F{green}❮%F{yellow}❮%F{red}❮%f%b'
+  # zstyle ':prezto:module:editor:info:keymap:alternate' format ' %F{green}❮%F{yellow}❮%F{red}❮%f%b'
 
   zstyle ':prezto:module:git:info:action' format ':%%F{yellow}%s%f%%b'
 
@@ -99,9 +101,9 @@ function prompt_sorinsolarized_setup {
 
   # PROMPT='%K{blue}%F{black} ${_prompt_sorinsolarized_pwd}%f %K{black}%F{blue}${git_info:+${(e)git_info[prompt]}} %k%F{black}${editor_info[overwrite]}%(?:: %F{red}!%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
   # PROMPT='%K{black} $USER@$HOSTNAME %K{blue}%F{black}⮀ ${_prompt_sorinsolarized_pwd}%f %K{black}%F{blue}⮀${git_info:+${(e)git_info[prompt]}} %k%F{black}⮀${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
-  PROMPT='%K{black} $USER@$HOSTNAME %K{blue}%F{black}⮀ ${_prompt_sorinsolarized_pwd}%f %k%F{blue}⮀${git_info:+${(e)git_info[prompt]}}${editor_info[overwrite]}%(?:: %F{red}!%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
+  PROMPT='%K{black} $USER@$HOSTNAME %K{blue}%F{black}⮀ ${_prompt_sorinsolarized_pwd} %F{blue}%k⮀%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]}%f%k%b '
 
-  # RPROMPT='${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
+  RPROMPT='${git_info:+${(e)git_info[prompt]}}${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
 

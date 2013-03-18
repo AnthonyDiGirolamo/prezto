@@ -106,7 +106,7 @@ function prompt_sorinsolarized_setup {
   # UTF-8 Characters
   # PROMPT='%K{black} %n@%m %K{blue}%F{black}⮀ ${_prompt_sorinsolarized_pwd} %F{blue}%k⮀%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]}%f%k%b '
   # Simpler
-  PROMPT='%K{black} %n@%m %K{blue}%F{black} ${_prompt_sorinsolarized_pwd} %F{blue}%k%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]}%f%k%b '
+  PROMPT='%K{white} %n@%m %K{blue}%F{black} ${_prompt_sorinsolarized_pwd} %F{blue}%k%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]}%f%k%b '
 
   # RPROMPT='${git_info:+${(e)git_info[prompt]}}${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
   RPROMPT='${git_info:+${(e)git_info[prompt]}}${editor_info[overwrite]}%(?:: %F{red}$?%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'

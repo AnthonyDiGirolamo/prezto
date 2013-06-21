@@ -109,7 +109,6 @@ zstyle ':prezto:module:prompt' theme 'sorinsolarized'
 #
 
 # Set syntax highlighters.
-<<<<<<< HEAD
 # By default main, brackets, and cursor are enabled.
 zstyle ':prezto:module:syntax-highlighting' highlighters \
   'main' \
@@ -117,22 +116,13 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'pattern' \
   'cursor' \
   'root'
-=======
-# By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
-#
+
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
 #   'function' 'bg=blue'
 #
->>>>>>> 16aa48baeb92866a1921ce2199f2cba1099ce22c
 
 #
 # Terminal

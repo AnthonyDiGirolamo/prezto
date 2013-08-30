@@ -14,3 +14,11 @@ fi
 
 source $HOME/.aliases
 
+fpath=(~/.zsh/func $fpath)
+compinit
+
+r() {
+  local f; f=(~/.zsh/func/*)
+  unfunction $f:t 2> /dev/null
+  autoload -U $f:t
+}

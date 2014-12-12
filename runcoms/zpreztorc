@@ -129,10 +129,10 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
-  'alias'    'fg=33' \
-  'builtin'  'fg=33' \
-  'command'  'fg=33' \
-  'function' 'fg=33' \
+  'alias'    'fg=48' \
+  'builtin'  'fg=48' \
+  'command'  'fg=48' \
+  'function' 'fg=48' \
   'path'     'fg=45'
 
 #
